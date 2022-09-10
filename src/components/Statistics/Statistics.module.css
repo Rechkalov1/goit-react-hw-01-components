@@ -1,0 +1,15 @@
+.statistics{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.statList{
+    display: flex;  
+    padding: 0;
+}
+.item{
+    display: flex;
+    flex-direction:column;
+    margin-right: 10px;
+   
+}

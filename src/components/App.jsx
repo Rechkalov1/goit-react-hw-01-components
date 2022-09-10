@@ -1,8 +1,11 @@
 import {Profile} from 'components/Profile/Profile'
 import { Statistics } from 'components/Statistics/Statistics'
+import {FriendsList} from 'components/Friends/FriendsList'
+import { TransitionHistory } from './TransitionHistory/TransitionHistory'
 import user from './data/user.json'
 import data from 'components/data/data.json'
-console.log(data)
+import friends from 'components/data/friends.json'
+
 export const App = () => {
  return(
   <div>
@@ -15,6 +18,8 @@ export const App = () => {
 />
  <Statistics stats ={data}
  />
+ <FriendsList  friends={friends}/>
+ <TransitionHistory/>
  </div>
  )
    
