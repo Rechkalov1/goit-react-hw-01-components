@@ -1,34 +1,51 @@
-.avatar{
-margin-top: 200px;
-  justify-content: center;
-    width: 250px;
-    height: 250px;
-    
-}
-.desc{
-   
-   display: block;
-   border-color:aqua;
-}
-.name{
-    color: #777;
-    font-size: 24px;
-}
-.tag{
-   color: #777;
-}
-.profile{
-  
+    .avatar{
+        margin-top: 20px;
+
+        width: 110px;
+        height: 110px;
+        align-items: center;
+    }
+    .desc{
+    width: 350px;
+
+    display: block;
     margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    justify-content: center;
-}
-.label{
-    font-size: 16px;
+        margin-right: auto;
+    }
+    .name{
+        color: #777;
+        font-size: 12px;
+    }
+    .tag{
     color: #777;
-}
-.quantity{
-    font-size: 18px;
-    color: red;
-}
+    }
+    .profile{
+        background-color: aquamarine;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .stats{
+        display: flex;
+       padding: 0px;
+       margin-left: 15px;
+    }
+    .infoStat{
+        border:1px solid aqua;
+        padding: 8px;
+    }
+    .label{
+        font-size: 16px;
+        color: #777;
+    }
+    .quantity{
+        font-size: 18px;
+        color: red;
+    }
+    .location{
+        font-size: 12px;
+    }

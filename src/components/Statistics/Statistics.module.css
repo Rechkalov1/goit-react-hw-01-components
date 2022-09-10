@@ -1,15 +1,26 @@
-.statistics{
-    display: flex;
-    flex-direction: column;
-    padding-left: 40px;
+    .statistics{
+        margin-right: auto;
+        margin-left: auto;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+       background-color: aqua;
+    }
+    .statList{
+        display: flex;  
+        padding: 25px;
+    }
+    .item{
+        display: flex;
+        flex-direction:column;
+        margin-right: 20px;
+    border: 1px solid aqua;
+    }
+.span{
+    color:blueviolet;
 }
-.statList{
-    display: flex;  
-    padding: 0;
-}
-.item{
-    display: flex;
-    flex-direction:column;
-    margin-right: 10px;
-   
+.percentage{
+    color: rgb(158, 111, 111);
 }
