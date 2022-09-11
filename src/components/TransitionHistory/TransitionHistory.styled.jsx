@@ -6,13 +6,7 @@ import styled from "styled-components";
 `;
  export const Tr = styled.tr`
 border: 1px solid red;
-
-
-
  `;
 export const Th = styled.th`
-   
-    
-   padding:8px 25px;
-   
-`
+   padding:8px 25px; 
+`;

@@ -4,17 +4,12 @@ import transactions from 'components/data/transactions.json'
 import{Table,Tr,Th} from './TransitionHistory.styled'
 export const TransitionHistory = ()=>{
     return(
-    <Table class="transaction-history">
-    
+    <Table>
       <Tr>
         <Th>Type</Th>
         <Th>Amount</Th>
         <Th>Currency</Th>
       </Tr>
-    
-  
-    
-      
       <Tr>
         <TransitionHistoryList item={transactions}/>
       </Tr>

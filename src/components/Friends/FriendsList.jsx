@@ -3,15 +3,15 @@ import {List,FriendList,Status} from'./FriendList.styled'
 export const FriendsList =({friends})=>{
     
 return( <List >
-{friends.map(({avatar,name,isOnline,id})=>(
-<FriendList key={id}> 
-<Status status={isOnline}/>
-<img className="avatar" src={avatar} alt="User avatar" width="48" />
-<p className="name">{name}</p>
-</FriendList>
-))}
-</List>)
-}
+    {friends.map(({avatar,name,isOnline,id})=>(
+    <FriendList key={id}> 
+    <Status status={isOnline}/>
+    <img className="avatar" src={avatar} alt="User avatar" width="48" />
+    <p className="name">{name}</p>
+    </FriendList>
+    ))}
+    </List>)
+    }
 
 
 FriendsList.propTypes ={
