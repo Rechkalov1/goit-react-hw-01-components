@@ -10,4 +10,8 @@ border: 1px solid red;
  `;
 export const Th = styled.th`
    padding:8px 25px; 
+   border-bottom: 1px solid red;
+`;
+export const TableRow = styled.tr`
+   background-color:antiquewhite;
 `;

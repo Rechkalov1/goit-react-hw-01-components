@@ -1,15 +1,16 @@
 
 import PropTypes from 'prop-types'
-import { Th,Tr} from './TransitionHistory.styled';
+import { TableRow, Th,} from './TransitionHistory.styled';
 
 export const TransitionHistoryList =({item})=>{
 return( item.map(({id,type,amount,currency}) =>(
    
-    <Tr key={id}>
+ 
+    <TableRow key={id}>
       <Th>{type}</Th>
       <Th>{amount}</Th>
       <Th>{currency}</Th>
-    </Tr>
+    </TableRow>
   
 
 
