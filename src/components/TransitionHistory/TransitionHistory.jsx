@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
-import {TransitionHistoryList} from './TransitionHistoryList'
-import transactions from 'components/data/transactions.json'
-import{Table,Tr,Th} from './TransitionHistory.styled'
-export const TransitionHistory = ()=>{
-    return(
+import { TransitionHistoryList } from './TransitionHistoryList'
+import { Table, Tr, Th } from './TransitionHistory.styled'
+export const TransitionHistory = (items) => {
+  return (
     <Table>
       <Tr>
         <Th>Type</Th>
@@ -11,12 +10,12 @@ export const TransitionHistory = ()=>{
         <Th>Currency</Th>
       </Tr>
       <Tr>
-        <TransitionHistoryList item ={transactions}/>
+        <TransitionHistoryList item={items} />
       </Tr>
-    
-  </Table>)
+    </Table>
+  )
 }
 
-TransitionHistory.propTypes ={
-    item:PropTypes.array.isRequired,
+TransitionHistory.propTypes = {
+  items: PropTypes.array.isRequired,
 }
