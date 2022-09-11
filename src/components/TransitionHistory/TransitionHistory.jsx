@@ -11,7 +11,7 @@ export const TransitionHistory = ()=>{
         <Th>Currency</Th>
       </Tr>
       <Tr>
-        <TransitionHistoryList item={transactions}/>
+        <TransitionHistoryList item ={transactions}/>
       </Tr>
     
   </Table>)

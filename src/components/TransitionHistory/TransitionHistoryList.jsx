@@ -5,13 +5,12 @@ import { Th,Tr} from './TransitionHistory.styled';
 export const TransitionHistoryList =({item})=>{
 return( item.map(({id,type,amount,currency}) =>(
    
-  <thead>
     <Tr key={id}>
       <Th>{type}</Th>
       <Th>{amount}</Th>
       <Th>{currency}</Th>
     </Tr>
-  </thead>
+  
 
 
 )));
