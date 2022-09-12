@@ -1,17 +1,16 @@
-import PropTypes from 'prop-types'
-import { TransitionHistoryList } from './TransitionHistoryList'
-import { Table, Tr, Th } from './TransitionHistory.styled'
-export const TransitionHistory = (items) => {
+import PropTypes from "prop-types"
+import { TransitionHistoryList } from "./TransitionHistoryList"
+import { Table, Th, TableTitle } from "./TransitionHistory.styled"
+export const TransitionHistory = ({ items }) => {
   return (
     <Table>
-      <Tr>
+      <TableTitle>
         <Th>Type</Th>
         <Th>Amount</Th>
         <Th>Currency</Th>
-      </Tr>
-      <Tr>
+
         <TransitionHistoryList item={items} />
-      </Tr>
+      </TableTitle>
     </Table>
   )
 }

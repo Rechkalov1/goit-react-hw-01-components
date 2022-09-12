@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import { Title } from './StatisticsStyled'
+import PropTypes from "prop-types"
+import { Title } from "./Statistics.styled"
 export const StatisticTitle = ({ title }) => {
   return <>{title && <Title>{title}</Title>}</>
 }

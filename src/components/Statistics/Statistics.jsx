@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types'
-import { StatisticTitle } from './Title'
-import { Statistic, StatList, Item, Span, Percentage } from './Statistics.styled'
-export const Statistics = ({ title, stats }) => {
+import PropTypes from "prop-types"
+import { StatisticTitle } from "./Title"
+import { Statistic, StatList, Item, Span, Percentage } from "./Statistics.styled"
+
+export const Statistics = ({ stats, title }) => {
   return (
     <Statistic>
       <StatisticTitle>title={title}</StatisticTitle>
@@ -9,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <Item key={id}>
-            <Span>{label}:</Span>
+            <Span>{label}</Span>
             <Percentage>{percentage}%</Percentage>
           </Item>
         ))}

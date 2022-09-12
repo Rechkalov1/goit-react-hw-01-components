@@ -1,17 +1,23 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
- export const Table = styled.table`
- display: flex;
- flex-direction: column;
- align-items: center;
-`;
- export const Tr = styled.tr`
-border: 1px solid red;
- `;
+export const Table = styled.table`
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 450px;
+`
+
 export const Th = styled.th`
-   padding:8px 25px; 
-   border-bottom: 1px solid red;
-`;
+  padding: 10px 80px;
+  border-bottom: 1px solid red;
+`
 export const TableRow = styled.tr`
-   background-color:antiquewhite;
-`;
+  background-color: antiquewhite;
+`
+export const TableTitle = styled.tr`
+  background-color: aquamarine;
+  align-items: center;
+`
