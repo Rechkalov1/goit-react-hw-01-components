@@ -5,7 +5,7 @@ import { Statistic, StatList, Item, Span, Percentage } from "./Statistics.styled
 export const Statistics = ({ stats, title }) => {
   return (
     <Statistic>
-      <StatisticTitle>title={title}</StatisticTitle>
+      <StatisticTitle title={title}></StatisticTitle>
 
       <StatList>
         {stats.map(({ id, label, percentage }) => (
